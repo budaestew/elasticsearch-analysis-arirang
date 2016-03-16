@@ -1,0 +1,31 @@
+{
+  "index": {
+    "analysis": {
+      "filter": {
+        "test_arirang_korean": {
+          "type": "arirang_korean"
+        },
+        "test_arirang_hanja": {
+          "type": "arirang_hanja"
+        },
+        "test_arirang_punctuation": {
+          "type": "arirang_punctuation"
+        },
+        "test_arirang_word_segment": {
+          "type": "arirang_word_segment"
+        }
+      },
+      "tokenizer": {
+        "test_arirang_tokenizer": {
+          "type": "arirang_tokenizer"
+        }
+      },
+      "analyzer": {
+        "test_arirang_custom": {
+          "type": "custom",
+          "tokenizer": "test_arirang_tokenizer"
+        }
+      }
+    }
+  }
+}
