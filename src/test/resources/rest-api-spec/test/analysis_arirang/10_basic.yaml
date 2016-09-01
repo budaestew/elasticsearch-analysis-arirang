@@ -1,0 +1,8 @@
+"Analyzer":
+  - do:
+      indices.analyze:
+        text: Hello world
+        analyzer: standard
+  - length: { tokens: 2 }
+  - match:  { tokens.0.token: Hello }
+  - match:  { tokens.1.token: world }

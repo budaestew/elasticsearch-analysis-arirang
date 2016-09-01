@@ -37,7 +37,7 @@ import org.elasticsearch.indices.analysis.IndicesAnalysisService;
 import org.elasticsearch.test.ESTestCase;
 
 public class AnalysisTestCase extends ESTestCase {
-    private static final String TEST_JSON = "/com/oheasy/elasticsearch/index/analysis/arirang_analysis.json";
+    private static final String TEST_JSON = "arirang_analysis.json";
 
     public static AnalysisService createAnalysisService() {
         Settings settings = Settings.settingsBuilder()
